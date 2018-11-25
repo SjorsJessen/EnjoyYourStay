@@ -23,6 +23,7 @@ void URotateDoor::BeginPlay()
 
 	//Find Owning Actor
 	AActor* Owner = GetOwner();
+	
 
 	//Create a Rotator
 	FRotator NewRotation = FRotator(0.0f, -60.0f, 0.0f);
