@@ -2,6 +2,8 @@
 
 #include "RotateDoor.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/PlayerController.h"
+#include "Engine/World.h"
 
 
 // Sets default values for this component's properties
@@ -32,7 +34,7 @@ void URotateDoor::BeginPlay()
 {
 
 	Super::BeginPlay();
-	
+	ActorThatOpensDoor = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
 
